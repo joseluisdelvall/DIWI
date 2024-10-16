@@ -1,0 +1,95 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------- LAYOUT ----------- */
+
+html {
+    width: 1260px;
+}
+
+body {
+    padding-top: 45px;
+    height: 500px;
+}
+
+main {
+    background-color: lightgray;
+    /* overflow: hidden; */
+    margin: 0 20px;
+    display: flow-root;
+}
+
+footer {
+    clear: both;
+    width: 1260px;
+    height: 100px;
+    background-color: lightgreen;
+}
+
+#izq {
+    float: left;
+    width: 780px; /* 800px - 20px padding(10 + 10) */
+    height: 1070px; /* 1100px - 30px padding-top */
+    padding: 30px 10px 0 10px;
+    background-color: lightblue;
+}
+
+#der {
+    float: left;
+    width: 370px; /* 400px - 30px padding */
+    height: 1250px; /* 1300px - 50px padding */
+    padding: 50px 0 0 30px;
+    margin-left: 20px;
+    background-color: lightcoral;
+}
+
+/* ----------- ELEMENTOS DEL LAYOUT ----------- */
+
+/* --- Formulario IZQ --- */
+
+form {
+    margin-top: 4em;
+    padding: 1em 0 1em 70px;
+    background-color: aquamarine;
+    position: sticky;
+    top: 10px;
+}
+
+form > input[type="text"] {
+    width: 490px; /* 500px - 10px padding */
+    padding-left: 10px;
+    height: 2em;
+    background-color: #d8d8d8;
+    display: block;
+}
+
+#centrar {
+    text-align: center;
+}
+
+form input[type="submit"] {
+    width: 150px;
+}
+
+/* --- cajas de la caja derecha --- */
+
+#der > div {
+    width: 148px;
+    height: 198px;
+    border: 1px solid black;
+}
+
+#der > div:nth-child(1) {
+    position: fixed;
+    left: 1050px;
+    background-color: rgb(109, 228, 125);
+}
+
+#der > div:nth-child(2) {
+    position: sticky;
+    top: 10px;
+    background-color: rgb(228, 109, 109);
+}

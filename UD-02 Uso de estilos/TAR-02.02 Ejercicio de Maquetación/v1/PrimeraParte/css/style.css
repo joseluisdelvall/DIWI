@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 1260px;
+}
+
+body {
+    background-color: lightgray;
+    padding-top: 45px;
+    height: 500px;
+}
+
+main {
+    float: left;
+    width: 780px; /* 800px - 20px padding(10 + 10) */
+    height: 370px; /* 400px - 30px padding-top */
+    padding: 30px 10px 0 10px;
+    margin-left: 20px;
+    background-color: lightblue;
+}
+
+aside {
+    float: left;
+    width: 370px; /* 400px - 30px padding */
+    height: 350px; /* 400px - 50px padding */
+    padding: 50px 0 0 30px;
+    margin: 0 20px;
+    background-color: lightcoral;
+}
+
+footer {
+    clear: both;
+    width: 1260px;
+    height: 100px;
+    background-color: lightgreen;
+}
